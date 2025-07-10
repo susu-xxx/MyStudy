@@ -25,7 +25,8 @@ public class DataMember {
 	private String pw;
 	
 	//default값 설정 필요 
-	@ColumnDefault("user")
+	@Column(nullable = false, insertable = false)
+	@ColumnDefault("'users'")
 	private String roles;
 
 }
